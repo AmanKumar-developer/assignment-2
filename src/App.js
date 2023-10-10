@@ -41,8 +41,8 @@ class App extends Component {
     })
   }
 
-  addContent = e => {
-    e.preventDefault()
+  addContent = event => {
+    event.preventDefault()
     const {username, password, website} = this.state
     const initial = website.slice(0, 1).toUpperCase()
     const classValue = colorList[Math.floor(Math.random() * 5)]
